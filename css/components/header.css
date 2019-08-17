@@ -1,0 +1,272 @@
+.header{
+  margin: 0;
+  background-color: #fff;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.header-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.header .avatar {
+	width: 30px;
+	height: 30px;
+}
+
+.profile-menu {
+  position: relative;
+  display: flex;
+  padding: 5px;
+}
+
+.profile-menu:hover {
+  text-decoration: underline;
+  background-color: #F2F7FF;
+}
+
+.profile-menu ul{
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  z-index: 100;
+  top: 80%;
+  right: 0;
+  padding: 8px;
+  margin: 0;
+  width: 115px;
+  border-radius: 5px;
+}
+
+.profile-item {
+  display: block;
+  color: black;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.profile-item:hover{
+  background-color: #FF0032;
+  color: white;
+  text-decoration: none;
+}
+
+.profile-menu ul.is-open {
+  display: block;
+}
+
+.login-name {
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header-search-button {
+  width: 22px;
+  margin-right: 22px;
+  padding: 3px;
+  transition-duration: 0.3s;
+}
+
+.header-profile-button {
+  width: 22px;
+  margin: 0;
+  margin-left: 5px;
+  padding: 3px;
+}
+
+.header-search-button:hover {
+  background-color: #F2F7FF;
+  border-radius: 3px;
+  width: 25px;
+}
+
+.header-search-icon {
+  margin: 0;
+}
+
+.burger-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 37px;
+  height: 37px;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 8px;
+}
+
+.footer .logo {
+	margin: 0;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo-title {
+	color: black;
+  margin: 0;
+  font-size: 20px;
+}
+
+.footer .logo-title {
+	color: white;
+}
+
+@media screen and (min-width: 480px) {
+	.logo-title {
+		color: black;
+		margin: 0;
+		font-size: 24px;
+	}
+	
+	.login-name {
+    font-size: 16px;
+	}
+	
+	.avatar {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .header-right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .header-center {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+	.header-login {
+		margin-top: 0;
+	}
+
+  .header-left {
+    padding: 0;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .logo-title {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+	.header-search-button {
+		margin-right: 25px;
+	}
+	
+	.logo-title {
+    font-size: 28px;
+	  line-height: 33px;
+  }
+  
+  .profile-item {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}

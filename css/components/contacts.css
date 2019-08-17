@@ -1,0 +1,77 @@
+.contacts {
+  font-size: 14px;
+  font-weight: 600;
+  list-style-type: none;
+  padding-left: 15px;
+}
+  
+.footer .contacts {
+  font-size: 12px;
+  font-weight: 400;
+}
+  
+.contacts-list {
+  color: #282b2f;
+  text-decoration: none;
+}
+
+.footer .contacts-list {
+  color: #ffffff;
+}
+  
+.contacts > li {
+  margin: 0;
+  margin-bottom: 14px;
+  line-height: 1.4;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts > li:last-child {
+  margin-bottom: 0;
+}
+  
+.phone-icon::before {
+  content: url(../../images/icons/phone.svg);
+  display: inline-block;
+  width: 15px;
+  margin-right: 8px;
+  margin-left: -15px;
+}
+  
+.phone-icon-white::before {
+  content: url(../../images/icons/phone-white.svg);
+  display: inline-block;
+  width: 15px;
+  margin-right: 8px;
+  margin-left: -15px;
+}
+
+.marker-icon::before {
+  content: url(../../images/icons/marker.svg);
+  display: inline-block;
+  width: 25px;
+  margin-right: 8px;
+  margin-left: -15px;
+}
+
+.contacts-list:hover {
+  text-decoration: underline;
+}
+  
+@media screen and (min-width: 480px) {
+  .contacts {
+    font-size: 16px;
+  }
+  
+  .marker-icon::before {
+    width: 15px;
+    margin-right: 8px;
+    margin-left: -15px;
+  }
+}

@@ -1,0 +1,260 @@
+.section {
+  padding: 30px 0;
+  margin: 0;
+}
+
+.col {
+  margin-bottom: 20px;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.section-team figure, .section-team .col {
+  margin: 0;
+}
+
+.mb-20 {
+  margin-bottom: 20px!important;
+}
+
+.section-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-border {
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.daily-background {
+  margin: 0;
+  margin-top: -40px;
+}
+
+.search-background {
+  margin-bottom: 0;
+}
+
+.search-background img {
+  -webkit-transition-duration: 1.2s;
+       -o-transition-duration: 1.2s;
+          transition-duration: 1.2s;
+}
+
+.section-team img {
+  max-height: 130px;
+}
+
+.figure-team {
+  height: 100%;
+}
+
+.search-background img:hover {
+  width: 120%;
+  height: 120%;
+}
+
+.daily-background img {
+  -webkit-transition-duration: 1.2s;
+       -o-transition-duration: 1.2s;
+          transition-duration: 1.2s;
+}
+
+.daily-background img:hover {
+  width: 115%;
+  height: 115%;
+}
+
+.daily-img {
+  height: 100%;
+  width: 100%;
+}
+
+.section-search {
+  padding-bottom: 0!important;
+}
+
+.section-popular .section-footer {
+  margin-top: 15px;
+}
+
+.bg-blue {
+  background-color: #F2F7FF;
+}
+
+.border-top {
+  border-top: 1px solid rgba(90, 88, 88, 0.3);
+}
+
+.slider-img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.section-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-title {
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  color: #888EA0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.section-description {
+  font-size: 14px;
+	line-height: 20px;
+	color: #464649;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.section-daily .section-footer {
+  position: relative;
+  margin-top: 15px;
+  z-index: 1;
+}
+
+.section-daily .section-footer .button-wrap {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.visuallyhidden {
+  opacity: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 38px;
+	  margin-bottom: 26px;
+  }
+  
+  .section-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+	.daily-background {
+	  margin-top: -95px;
+  }
+  
+  .section-team img {
+    max-height: 170px;
+  }
+}
+
+@media screen and (min-width: 640px) {  
+	.section {
+		padding: 60px 0;
+	}
+  
+  .section-layout {
+    margin: 0 -20px;
+  }
+
+  .section-layout > * {
+    padding: 0 20px;
+  }
+  
+  .section-description {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+  
+	.daily-background {
+    margin-top: -150px;
+	}
+	
+	.section-search .section-footer {
+		margin-top: 10px;
+	}
+	
+	.section-daily {
+		padding-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 960px) {
+  .section {
+    padding: 90px 0;
+	}
+	
+	.section-layout {
+    margin: 0 -45px;
+  }
+
+  .section-layout > * {
+    padding: 0 45px;
+  }
+	
+	.section-daily {
+		padding-bottom: 0;
+	}
+  
+  .section-title {
+    font-size: 52px;
+    line-height: 64px;
+    margin-bottom: 50px;
+  }
+
+  .section-description {
+    font-size: 16px;
+	  line-height: 22px;
+  }
+  
+  .section-search .section-footer {
+	  margin-top: 35px;
+  }
+  
+  .search-background {
+    margin-top: 30px;
+  }
+  
+  .daily-background {
+		margin-top: -250px;
+	}
+}
